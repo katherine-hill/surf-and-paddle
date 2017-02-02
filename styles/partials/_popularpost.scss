@@ -1,0 +1,120 @@
+.popularpost {
+    .title {
+        font-family: $primaryHeaderText-font;
+        color: $primaryHeaderText-color;
+        border-top: 2px solid grey;
+        font-size: 3em;
+        padding-top: 2%;
+        @include centertext;
+    }
+
+    .bottomlogo {
+        background-color: $inactiveBackgroundButton-color;
+        font-family: $main-text;
+        color: white;
+        height: 100px;
+        width: 100%;
+        position: absolute;
+
+        .copyright {
+            position: relative;
+            margin-top: 2%;
+            display: block;
+            margin-left: 5%;
+            float: left;
+
+            i {
+                font-size: 1.75em;
+                padding-left: 4%;
+            }
+        }
+
+        ul {
+            float: right;
+            margin-top: 3%;
+
+            li {
+                position: relative;
+                width: 25%;
+                display: inline;
+                border-right: 1px solid white;
+                margin-right: 3%;
+                padding-right: 2%;
+            }
+
+            .ugh {
+                border-right: none;
+            }
+        }
+    }
+
+    .copyright {
+        position: absolute;
+        clear: both;
+        margin-left: 40%;
+        bottom: 0;
+    }
+
+    .popularlist {
+        margin-top: 3%;
+        display: flex;
+        height: 450px;
+        flex-direction: row;
+
+        .first {
+            background: linear-gradient(rgba(#083452, .75), rgba(#A3B3BF, .85)), url('images/dogprofilepic.jpg')25%;
+            @include popularpostlistinactive;
+
+            span {
+                @include populartextalign;
+            }
+        }
+
+        .first:hover {
+            background: url('images/dogprofilepic.jpg')25%;
+            @include popularpostlistActive;
+        }
+
+        .second {
+            background: linear-gradient(rgba(#083452, .75), rgba(#A3B3BF, .85)), url('images/rundog.jpg')90%;
+            @include popularpostlistinactive;
+
+            span {
+                @include populartextalign;
+            }
+        }
+
+        .second:hover {
+            background: url('images/rundog.jpg')90%;
+            @include popularpostlistActive;
+        }
+
+        .third {
+            background: linear-gradient(rgba(#083452, .75), rgba(#A3B3BF, .85)), url('images/whoaacat.jpg')25%;
+            @include popularpostlistinactive;
+
+            span {
+                @include populartextalign;
+            }
+        }
+
+        .third:hover {
+            background: url('images/whoaacat.jpg')25%;
+            @include popularpostlistActive;
+        }
+
+        .fourth {
+            background: linear-gradient(rgba(#083452, .75), rgba(#A3B3BF, .85)), url('images/wrasslindogs.jpg')45%;
+            @include popularpostlistinactive;
+
+            span {
+                @include populartextalign;
+            }
+        }
+
+        .fourth:hover {
+            background: url('images/wrasslindogs.jpg')45%;
+            @include popularpostlistActive;
+        }
+    }
+}

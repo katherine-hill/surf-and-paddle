@@ -1,0 +1,31 @@
+@mixin popularpostlistinactive {
+    background-size: cover;
+    position: relative;
+    width: 25%;
+    height: 450px;
+    font-family: $herofont-text;
+    color: white;
+    font-size: 2em;
+    display: flex;
+}
+@mixin popularpostlistActive {
+    background-size: cover;
+    position: relative;
+    width: 25%;
+    height: 450px;
+    font-family: $herofont-text;
+    color: $secondaryHeaderText-color;
+    font-size: 2em;
+    display: flex;
+}
+@mixin populartextalign {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1%;
+}
+@mixin centertext {
+    display: block;
+    padding-left: 40%;
+    width: 100%;
+}

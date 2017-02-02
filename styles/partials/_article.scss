@@ -1,0 +1,105 @@
+.overflow {
+    overflow: hidden;
+}
+
+article {
+    display: block;
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 60%;
+
+    h2 {
+        font-family: $primaryHeaderText-font;
+        text-transform: uppercase;
+        font-size: 3em;
+        color: $primaryHeaderText-color;
+    }
+
+    .authorlist {
+        background: #eee;
+        font-family: $main-text;
+        font-size: 0.75em;
+        color: $secondaryHeaderText-color;
+        padding: 10px;
+
+        img {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+        }
+
+        span {
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+    }
+
+    p {
+        margin: 6% 2% 2% 6%;
+        font-family: $main-text;
+        font-size: 1em;
+        line-height: 1.5em;
+        margin-bottom: 2em;
+        width: 70%;
+    }
+
+    .pullquotecontainer {
+        margin-left: 15%;
+
+        .verticalline {
+            float: left;
+            background-color: grey;
+            height: 2em;
+            width: 3px;
+        }
+
+        .pullquote {
+            font-family: $primaryHeaderText-font;
+            color: #083452;
+            font-size: 2em;
+            vertical-align: center;
+        }
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+
+        ul {
+            justify-content: space-around;
+            height: 30px;
+            border: none;
+            width: 100%;
+            margin-left: 3%;
+            padding-bottom: 10%;
+
+            li {
+                font-family: $main-text;
+                display: inline;
+                padding: 1%;
+                height: 30px;
+                border-radius: 5%;
+                width: 30%;
+                word-spacing: 5px;
+                font-size: 1.5em;
+                color: white;
+                background-color: $inactiveIconBackroundButton-color;
+
+                i {
+                    height: 30px;
+                    padding: 1%;
+                }
+            }
+
+            li:hover {
+                background-color: $iconActiveBackgroundButton-color;
+            }
+
+            li:active {
+                background-color: $inactiveBackgroundButton-color;
+            }
+        }
+    }
+}
