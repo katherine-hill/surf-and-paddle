@@ -56,17 +56,21 @@ header {
   header .mainhero-text {
     display: inline-block;
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 13%;
     font-family: "Fjalla One", sans-serif;
     text-align: center;
     font-size: 5.5em;
     text-transform: uppercase;
     color: white;
-    position: relative; }
+    position: absolute; }
   header .captionish {
+    position: relative;
+    display: inline-block;
     color: #083452;
     font-size: 1em;
-    margin-left: 30%; }
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 13%; }
   header nav {
     color: #083452;
     font-size: 1.5em;
@@ -76,13 +80,12 @@ header {
     header nav .logo {
       float: left;
       padding: 10px; }
-    header nav form {
+    header nav .search {
       float: right;
       width: 13%;
-      padding: 10px;
-      padding-right: 3px; }
-      header nav form input {
-        opacity: .5; }
+      padding: 10px 3px 10px 10px; }
+      header nav .search input {
+        opacity: 0.5; }
     header nav .about {
       float: right;
       margin-left: 20%;
@@ -105,7 +108,7 @@ article {
     font-size: 3em;
     color: #083452; }
   article .authorlist {
-    background: #eee;
+    background: #f4f4f4;
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 0.75em;
     color: #1d74b6;
@@ -250,6 +253,7 @@ p {
     position: relative;
     margin-top: 2%;
     display: block;
+    width: 25%;
     margin-left: 5%;
     float: left; }
     .popularpost .bottomlogo .copyright i {
@@ -260,17 +264,13 @@ p {
     margin-top: 3%; }
     .popularpost .bottomlogo ul li {
       position: relative;
+      width: 25%;
       display: inline;
       border-right: 1px solid white;
-      margin-right: 5%;
+      margin-right: 3%;
       padding-right: 2%; }
     .popularpost .bottomlogo ul .ugh {
       border-right: none; }
-.popularpost .copyright {
-  position: absolute;
-  clear: both;
-  margin-left: 40%;
-  bottom: 0; }
 .popularpost .popularlist {
   margin-top: 3%;
   display: flex;
